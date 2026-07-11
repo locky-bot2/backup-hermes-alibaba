@@ -49,14 +49,14 @@
     },
     {
       "id": "8155942596b5",
-      "name": "Hermes VPS Weekly Backup",
-      "prompt": "Weekly backup of Hermes VPS to GitHub. Runs the backup script which git adds, commits, and pushes to origin/main.",
+      "name": "Hermes VPS Weekly Backup - Alibaba",
+      "prompt": "Weekly backup of Hermes VPS to GitHub. Runs the backup script which rsyncs ~/.hermes/ config, profiles, skills, cron, memories, and sessions to the backup repo, then git commits and pushes to GitHub.",
       "skills": [],
       "skill": null,
       "model": null,
       "provider": null,
       "base_url": null,
-      "script": "hermes-backup.sh",
+      "script": "backup.sh",
       "no_agent": true,
       "context_from": null,
       "schedule": {
@@ -87,8 +87,8 @@
         "thread_id": null
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": "/home/admin/backup-hermes-alibaba"
     }
   ],
-  "updated_at": "2026-07-11T16:10:52.773734+08:00"
+  "updated_at": "2026-07-11T16:25:58.811173+08:00"
 }
