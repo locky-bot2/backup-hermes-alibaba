@@ -1,0 +1,22 @@
+{
+  "runId": "cc7f4556-42cf-4a10-9ee4-363a16e5d2c9",
+  "sessionKey": "api-00c6e50510a49039",
+  "friendlyId": "api-00c6e50510a49039",
+  "status": "active",
+  "createdAt": 1781333727679,
+  "updatedAt": 1781333762243,
+  "lastEventAt": 1781333762243,
+  "assistantText": "Let me check what's in the workspace first\n\nThe `/workspace` path doesn't exist yet. Let me look at",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_33a56cb002884807a8aeb5fa",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    }
+  ],
+  "lifecycleEvents": []
+}
+[]
+}

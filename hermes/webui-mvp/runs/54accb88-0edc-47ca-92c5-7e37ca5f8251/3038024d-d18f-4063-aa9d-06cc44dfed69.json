@@ -1,0 +1,13 @@
+{
+  "runId": "3038024d-d18f-4063-aa9d-06cc44dfed69",
+  "sessionKey": "54accb88-0edc-47ca-92c5-7e37ca5f8251",
+  "friendlyId": "54accb88-0edc-47ca-92c5-7e37ca5f8251",
+  "status": "complete",
+  "createdAt": 1781310959050,
+  "updatedAt": 1781310976380,
+  "lastEventAt": 1781310976380,
+  "assistantText": "I'm running Claude Opus 4 (model: `anthropic/claude-opus-4.6`) served through OpenRouter. So you're talking to Anthropic's biggest model, routed via OpenRouter's API.",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}

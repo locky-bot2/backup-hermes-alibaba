@@ -1,0 +1,58 @@
+{
+  "runId": "92009d5e-0c09-40fc-b774-a066357f9ef7",
+  "sessionKey": "api-a9a9f5ec34e4a058",
+  "friendlyId": "api-a9a9f5ec34e4a058",
+  "status": "active",
+  "createdAt": 1781399843554,
+  "updatedAt": 1781399874226,
+  "lastEventAt": 1781399874226,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_fae2025ccb1144cab5aabef1",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_1de48037eeb54c0398de1f08",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_R3Kx1hwJ602As2tLcQxa2437",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_16fc2c7f001f4f20be24e0fd",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_9b754992125f40cf8a2b4839",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/server.js"
+    },
+    {
+      "id": "call_9413ed43e5b64bc181447654",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/tests/server.integration.test.js"
+    },
+    {
+      "id": "call_bfebbda79f9e4dfb8746b36e",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ecycleEvents": []
+}

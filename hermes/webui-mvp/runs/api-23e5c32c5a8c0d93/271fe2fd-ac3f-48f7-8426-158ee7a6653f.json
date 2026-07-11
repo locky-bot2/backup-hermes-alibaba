@@ -1,0 +1,41 @@
+{
+  "runId": "271fe2fd-ac3f-48f7-8426-158ee7a6653f",
+  "sessionKey": "api-23e5c32c5a8c0d93",
+  "friendlyId": "api-23e5c32c5a8c0d93",
+  "status": "active",
+  "createdAt": 1781335417135,
+  "updatedAt": 1781335426937,
+  "lastEventAt": 1781335426937,
+  "assistantText": "\n\nLet me check the current state of things to understand what Squirtle already set up",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_TntlYsDAaq0SUFUVuZB21087",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_a91f4f8bcd5c4e3aabff2a47",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_4eb630938f1d4967b9f828b4",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 weather-app"
+    },
+    {
+      "id": "call_16f7b98055d2473c9a510e1b",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    }
+  ],
+  "lifecycleEvents": []
+}
+
+  "lifecycleEvents": []
+}

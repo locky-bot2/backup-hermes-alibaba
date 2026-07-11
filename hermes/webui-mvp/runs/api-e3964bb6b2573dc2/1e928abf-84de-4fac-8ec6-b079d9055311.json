@@ -1,0 +1,13 @@
+{
+  "runId": "1e928abf-84de-4fac-8ec6-b079d9055311",
+  "sessionKey": "api-e3964bb6b2573dc2",
+  "friendlyId": "api-e3964bb6b2573dc2",
+  "status": "complete",
+  "createdAt": 1781317706368,
+  "updatedAt": 1781317713253,
+  "lastEventAt": 1781317713253,
+  "assistantText": "Understood. I'm Ash.\n\nWorkspace is at `/workspace`. What are we building?",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}

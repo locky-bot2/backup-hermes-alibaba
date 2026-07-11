@@ -1,0 +1,28 @@
+{
+  "runId": "6cf3b6c0-fe52-44a7-a166-e565093b9d43",
+  "sessionKey": "api-00c6e50510a49039",
+  "friendlyId": "api-00c6e50510a49039",
+  "status": "active",
+  "createdAt": 1781334111036,
+  "updatedAt": 1781334134977,
+  "lastEventAt": 1781334134977,
+  "assistantText": "\n\nNo workspace path found. Let me check what's",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "019ebfc99ef1852ebf53889ac6ae59e6",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "019ebfc9ac7eb7c8128d3a2f93c2c79d",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    }
+  ],
+  "lifecycleEvents": []
+}
+
+}

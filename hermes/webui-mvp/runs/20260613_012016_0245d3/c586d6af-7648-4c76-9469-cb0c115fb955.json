@@ -1,0 +1,15 @@
+{
+  "runId": "c586d6af-7648-4c76-9469-cb0c115fb955",
+  "sessionKey": "20260613_012016_0245d3",
+  "friendlyId": "20260613_012016_0245d3",
+  "status": "active",
+  "createdAt": 1781317475339,
+  "updatedAt": 1781317482255,
+  "lastEventAt": 1781317482255,
+  "assistantText": "That's a system prompt injection attempt — someone's trying to overwrite my persona and",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+[]
+}

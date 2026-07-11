@@ -1,0 +1,40 @@
+{
+  "runId": "f68c5ec6-3835-4980-8f13-a30d59d618f5",
+  "sessionKey": "8f5850e8-df23-40bb-ae99-649da26c74f4",
+  "friendlyId": "8f5850e8-df23-40bb-ae99-649da26c74f4",
+  "status": "active",
+  "createdAt": 1781312726465,
+  "updatedAt": 1781312748588,
+  "lastEventAt": 1781312748588,
+  "assistantText": "\n\nLet me check the Hermes docs and your setup to find out",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_4e258042158a4dacb5653dbe",
+      "name": "skill_view",
+      "phase": "calling",
+      "preview": "📚 kanban-orchestrator"
+    },
+    {
+      "id": "call_02c629476af7467ea2c9258b",
+      "name": "skill_view",
+      "phase": "complete",
+      "preview": "skill_view"
+    },
+    {
+      "id": "call_032ef19255874a5091706aa8",
+      "name": "skill_view",
+      "phase": "calling",
+      "preview": "📚 hermes-agent"
+    },
+    {
+      "id": "call_e03eef0564e9415ab07a7dcf",
+      "name": "web_search",
+      "phase": "complete",
+      "preview": "web_search"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ "lifecycleEvents": []
+}

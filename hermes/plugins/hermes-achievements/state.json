@@ -1,0 +1,99 @@
+{
+  "unlocks": {
+    "autonomous_avalanche": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "claude_confidant": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781310159
+    },
+    "config_surgeon": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781310159
+    },
+    "dependency_hell_tourist": {
+      "evidence": null,
+      "first_tier": null,
+      "unlocked_at": 1781440226
+    },
+    "file_archaeologist": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "gemini_cartographer": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781333312
+    },
+    "marathon_operator": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "model_sommelier": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781309368
+    },
+    "night_shift_operator": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781333312
+    },
+    "openrouter_enjoyer": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "permission_denied_any_percent": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "provider_polyglot": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781333312
+    },
+    "rebase_acrobat": {
+      "evidence": null,
+      "first_tier": "Gold",
+      "unlocked_at": 1781440226
+    },
+    "screenshot_hunter": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781333312
+    },
+    "skillsmith": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "subagent_commander": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781440226
+    },
+    "test_suite_tamer": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1781333312
+    },
+    "toolset_cartographer": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781309368
+    },
+    "weekend_warrior": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1781333312
+    }
+  }
+}

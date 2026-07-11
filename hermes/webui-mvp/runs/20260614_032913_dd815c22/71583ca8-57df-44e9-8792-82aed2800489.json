@@ -1,0 +1,15 @@
+{
+  "runId": "71583ca8-57df-44e9-8792-82aed2800489",
+  "sessionKey": "20260614_032913_dd815c22",
+  "friendlyId": "20260614_032913_dd815c22",
+  "status": "active",
+  "createdAt": 1781423686910,
+  "updatedAt": 1781423692019,
+  "lastEventAt": 1781423692019,
+  "assistantText": "Let me check GitHub auth and",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+: []
+}

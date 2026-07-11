@@ -1,0 +1,40 @@
+{
+  "runId": "36713567-c920-4c09-862b-a74770880b3c",
+  "sessionKey": "api-be1251a83f4ccb73",
+  "friendlyId": "api-be1251a83f4ccb73",
+  "status": "active",
+  "createdAt": 1781354255418,
+  "updatedAt": 1781354304253,
+  "lastEventAt": 1781354304253,
+  "assistantText": "Great, approvals mode is off now. Let me check the repo state and push.\n\nIt",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_NqVINu1i36Po6erN5R4Z5853",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_f7614409fb1846cda7b1c658",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_f2445e9c27fc409ab84ab586",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_53faf7fd701644f4bad8ba28",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ts": []
+}

@@ -1,0 +1,46 @@
+{
+  "runId": "319957da-075e-419f-9e3f-c5987a239e90",
+  "sessionKey": "api-6d6774f859f870f3",
+  "friendlyId": "api-6d6774f859f870f3",
+  "status": "active",
+  "createdAt": 1781404457205,
+  "updatedAt": 1781404490620,
+  "lastEventAt": 1781404490620,
+  "assistantText": "\n\nBased on",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_mWetjfB4PCfjqrbjwwxM5472",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_01_8CYyze44mgby1ILuxLyp7009",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_00_l2Oel4kYap6b7EZUimk21316",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_6385877cde124b2d9eb1c36e",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_6574387498b146fa87910704",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    }
+  ],
+  "lifecycleEvents": []
+}
+]
+}

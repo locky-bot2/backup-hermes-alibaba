@@ -1,0 +1,15 @@
+{
+  "runId": "68da8f90-6f30-477f-b93b-9b0a5d12baed",
+  "sessionKey": "8f5850e8-df23-40bb-ae99-649da26c74f4",
+  "friendlyId": "8f5850e8-df23-40bb-ae99-649da26c74f4",
+  "status": "active",
+  "createdAt": 1781313574378,
+  "updatedAt": 1781313580546,
+  "lastEventAt": 1781313580546,
+  "assistantText": "Yes, go ahead and try! Run this",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+ts": []
+}

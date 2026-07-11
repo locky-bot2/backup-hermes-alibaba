@@ -1,0 +1,46 @@
+{
+  "runId": "4a45bb06-a768-4740-8c25-99a0a99036fe",
+  "sessionKey": "api-e5954b0a91964a56",
+  "friendlyId": "api-e5954b0a91964a56",
+  "status": "active",
+  "createdAt": 1781338201570,
+  "updatedAt": 1781338226695,
+  "lastEventAt": 1781338226695,
+  "assistantText": "\n\nAlright, time to let **Squ",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_2ASXFdhNnteNgziXf3vK3833",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_01_rYJiWFBnNjNEKxC4hy9g1985",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_9cd1648f41e94d2a82ed4d34",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/push-to-github.sh"
+    },
+    {
+      "id": "call_97435cd0ac6241e892eaa55a",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_2fc0d1398b094bf692ecfff5",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+[]
+}

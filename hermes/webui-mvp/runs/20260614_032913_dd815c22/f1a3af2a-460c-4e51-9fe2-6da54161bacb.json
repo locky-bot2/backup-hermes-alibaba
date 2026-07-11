@@ -1,0 +1,40 @@
+{
+  "runId": "f1a3af2a-460c-4e51-9fe2-6da54161bacb",
+  "sessionKey": "20260614_032913_dd815c22",
+  "friendlyId": "20260614_032913_dd815c22",
+  "status": "active",
+  "createdAt": 1781422632192,
+  "updatedAt": 1781422661700,
+  "lastEventAt": 1781422661700,
+  "assistantText": "\n\nGreat — I can see from the gateway logs that Telegram is already connected and you're **",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_7349ac1606974a639c9cfa87",
+      "name": "cronjob",
+      "phase": "complete",
+      "preview": "cronjob"
+    },
+    {
+      "id": "call_537be698d4e041819dd406fe",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_92dcceda8c78403783937f4d",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_aa74b9dbcb9a4a049145cca6",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ents": []
+}

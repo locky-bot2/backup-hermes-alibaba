@@ -1,0 +1,155 @@
+{
+  "runId": "8165b1cb-530c-4a35-82f9-c14e09c13616",
+  "sessionKey": "api-00c6e50510a49039",
+  "friendlyId": "api-00c6e50510a49039",
+  "status": "active",
+  "createdAt": 1781334189715,
+  "updatedAt": 1781334265680,
+  "lastEventAt": 1781334265680,
+  "assistantText": "\n\nLet me check what's been built so far and what the spec says.",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00e344c664b24116ae2d026a",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_169cb34ea9e34260b73dcf6a",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_bswPAejrNy9BrXSvq4oY4801",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_01_8WVqwRc8DDZpUMYZnBd62104",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_02_5yOYU89ojYhgcXhs5Vfm3342",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_JZ5oQLLNTIQ6kwV0iaPa3119",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_01_vxuqSoXMqQJYATq7a1Qd1107",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_02_0oLFloMGballUR9oyz4d7331",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_03_hmcJ7v9uLXFTeHvBLUPk3123",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_04_lXwns0xXFljKKatLzOSt0537",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_81bc2a4750904bbfbb8c89a2",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_03835183e7c143e8a370aad2",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_6d75e55e8c2a46729bad2b94",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_a7eb84ed137b42eeb58a61ce",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_404551032cef460087fd64cb",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_7ca549b3f3d9494fad23261c",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "019ebfcb1325aa68d3b27a3a0bdd42d0",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "019ebfcb182c6f84b7aee5e65b5b1129",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "019ebfcba36cb3008f15bf482bd2ce82",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_97b56b0d4f2c4586953d6168",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_0759406b31a940cb84975e4e",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_fa74fb88ad714d2daff23519",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/tests/weather.test.js"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ {
+      "id": "call_4138d26b7eb74ff0989fc599",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}

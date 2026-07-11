@@ -1,0 +1,22 @@
+{
+  "runId": "07d4f8ec-25ce-47a1-a489-6a932ce62cf5",
+  "sessionKey": "api-5a69fe0605c9ac5d",
+  "friendlyId": "api-5a69fe0605c9ac5d",
+  "status": "active",
+  "createdAt": 1781352885375,
+  "updatedAt": 1781352913328,
+  "lastEventAt": 1781352913328,
+  "assistantText": "\n\nFound the bug. Line 71. Look at this:\n\n```bash\n\" '$GH_REPO' '$REPO_DESCRIPTION'\"\n```\n\nInside the `",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_b4mEDZb0WcxSzBIwmFf82868",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ []
+}

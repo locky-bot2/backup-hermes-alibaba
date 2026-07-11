@@ -1,0 +1,112 @@
+{
+  "runId": "2a7ae3ae-6290-4b06-9d30-5968fd2e1085",
+  "sessionKey": "api-f6b25adb0fac5688",
+  "friendlyId": "api-f6b25adb0fac5688",
+  "status": "active",
+  "createdAt": 1781334327548,
+  "updatedAt": 1781334370985,
+  "lastEventAt": 1781334370985,
+  "assistantText": "No idea what Charmander is or what integration testing refers to. Let me look around.\n\nFound the full history. Let me check the current state of the weather app and Charmander's testing status.\n\n\n\nLet me check Charmander's status and the current state of the weather app.\n\n",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_9KDTTG6A9US3BbMwiH2C7190",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_01_A27vTGfzUvSnPbXXktdc0184",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_02_pzLeiSqYi572VWhlx17E6479",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_963cec4454f04a8584a4e7cc",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_14515b7dd27c4d198aa4c685",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_00_4D7DAFgRjNgUhlqno6OI1130",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_fb5247b9eec1494cbda89166",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_00_MJgZ7a5gFPReUqEntiCN5815",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_uUR4lh5URPoTB4FiTidB4294",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_750983c68bd64cc393b1c787",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_a9e8594bb38d4b6d986b715b",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_460424c232d64ce2812ad55c",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_1655e302501e482182a6f621",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/index.html"
+    },
+    {
+      "id": "call_0d93f6e5a7874f3d80e7fbe7",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/weather.js"
+    },
+    {
+      "id": "call_fa975d90aef44828b24f0abf",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/tests/weather.test.js"
+    },
+    {
+      "id": "call_65a43d5367124e4aa096aeb2",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    }
+  ],
+  "lifecycleEvents": []
+}
+
+}

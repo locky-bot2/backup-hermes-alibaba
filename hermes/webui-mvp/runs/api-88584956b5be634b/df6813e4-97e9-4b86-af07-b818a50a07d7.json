@@ -1,0 +1,27 @@
+{
+  "runId": "df6813e4-97e9-4b86-af07-b818a50a07d7",
+  "sessionKey": "api-88584956b5be634b",
+  "friendlyId": "api-88584956b5be634b",
+  "status": "active",
+  "createdAt": 1781353898447,
+  "updatedAt": 1781353917244,
+  "lastEventAt": 1781353917244,
+  "assistantText": "\n\nYou're blocked by the approvals mode issue",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_0b325925b7f14eac913a5e18",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_5cf93643c74249c1b7c7dd78",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    }
+  ],
+  "lifecycleEvents": []
+}
+}

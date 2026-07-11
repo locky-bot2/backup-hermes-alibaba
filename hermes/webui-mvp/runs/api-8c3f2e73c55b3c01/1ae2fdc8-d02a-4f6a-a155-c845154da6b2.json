@@ -1,0 +1,22 @@
+{
+  "runId": "1ae2fdc8-d02a-4f6a-a155-c845154da6b2",
+  "sessionKey": "api-8c3f2e73c55b3c01",
+  "friendlyId": "api-8c3f2e73c55b3c01",
+  "status": "active",
+  "createdAt": 1781342232963,
+  "updatedAt": 1781342245997,
+  "lastEventAt": 1781342245997,
+  "assistantText": "\n\nThe `execute_code` tool is blocked by an approval prompt that needs user confirmation",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_0zrk9C6XbqnWmpSrXqGI2124",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    }
+  ],
+  "lifecycleEvents": []
+}
+: []
+}

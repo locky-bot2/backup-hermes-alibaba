@@ -1,0 +1,46 @@
+{
+  "runId": "a6b23332-e0fa-4c35-8928-3d46022e6d7d",
+  "sessionKey": "api-ba8d3a9ead168613",
+  "friendlyId": "api-ba8d3a9ead168613",
+  "status": "active",
+  "createdAt": 1781319025523,
+  "updatedAt": 1781319040970,
+  "lastEventAt": 1781319040970,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_8fb25ead53eb4a668207f37f",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 *.md"
+    },
+    {
+      "id": "call_995721bd703d4867907b7bdb",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 SKILL.md"
+    },
+    {
+      "id": "call_88d5f091f74847f3ac79378c",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/profiles/pikachu/config.yaml"
+    },
+    {
+      "id": "call_73273cb825884dcca43bb472",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_832b5a9cd6ae4fe69a0c165a",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/profiles/squirtle/config.yaml"
+    }
+  ],
+  "lifecycleEvents": []
+}
+
+}

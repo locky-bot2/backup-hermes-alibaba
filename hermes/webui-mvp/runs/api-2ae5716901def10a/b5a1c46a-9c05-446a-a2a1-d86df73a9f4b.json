@@ -1,0 +1,40 @@
+{
+  "runId": "b5a1c46a-9c05-446a-a2a1-d86df73a9f4b",
+  "sessionKey": "api-2ae5716901def10a",
+  "friendlyId": "api-2ae5716901def10a",
+  "status": "active",
+  "createdAt": 1781403024029,
+  "updatedAt": 1781403045156,
+  "lastEventAt": 1781403045156,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_7d6e1c9b11e343358de34812",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_2ae61641afa2464fb743c056",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 GITHUB_TOKEN|GH_TOKEN|github_pat|github_token"
+    },
+    {
+      "id": "call_5a95b62c61c54a038c2dd2f6",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_063b1ae15c584471a9ea8b95",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+s": []
+}

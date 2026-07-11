@@ -1,0 +1,40 @@
+{
+  "runId": "bee7f30a-469d-46a6-9df1-cc60cb95ac08",
+  "sessionKey": "api-b2e08f169a62bae7",
+  "friendlyId": "api-b2e08f169a62bae7",
+  "status": "active",
+  "createdAt": 1781323990291,
+  "updatedAt": 1781324000198,
+  "lastEventAt": 1781324000198,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_mSlQrVxzRiCIvf3ed52E0078",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_01_GiAZPBEy8vpY8IfJKq6X7521",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_3ba82d4d65bc426a87d540aa",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 find-skills"
+    },
+    {
+      "id": "call_6d2575deef5a4c23b0a8138c",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ycleEvents": []
+}

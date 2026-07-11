@@ -1,0 +1,46 @@
+{
+  "runId": "aa01015e-4dfe-4096-bf0b-6e94132d06b0",
+  "sessionKey": "api-a8b09dfc87cb959d",
+  "friendlyId": "api-a8b09dfc87cb959d",
+  "status": "active",
+  "createdAt": 1781327338860,
+  "updatedAt": 1781327350989,
+  "lastEventAt": 1781327350989,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_i8njWVE7PfpRjFc6Jmhv8309",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_01_2QGTWlj6LGkqebcPJd769235",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_024d1b323f2d4f7f960b7fbd",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 *"
+    },
+    {
+      "id": "call_7b241d13eb07456bb3ec73fb",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_bd0bff07f28f417480e577ae",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 pikachu*"
+    }
+  ],
+  "lifecycleEvents": []
+}
+: []
+}

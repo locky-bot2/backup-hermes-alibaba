@@ -1,0 +1,28 @@
+{
+  "runId": "dcec1b51-2139-4049-99e8-5bb4e3931130",
+  "sessionKey": "api-d9daae4191bb9e01",
+  "friendlyId": "api-d9daae4191bb9e01",
+  "status": "active",
+  "createdAt": 1781339785006,
+  "updatedAt": 1781339794224,
+  "lastEventAt": 1781339794224,
+  "assistantText": "\n\nI can see you have 4 public repositories. Let me get more details on each and see what's",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_01_nO24Ny8UeT4pwSifEUaR4443",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_XqeHg2p7vDABpNWmgjFQ3430",
+      "name": "web_extract",
+      "phase": "complete",
+      "preview": "web_extract"
+    }
+  ],
+  "lifecycleEvents": []
+}
+
+}

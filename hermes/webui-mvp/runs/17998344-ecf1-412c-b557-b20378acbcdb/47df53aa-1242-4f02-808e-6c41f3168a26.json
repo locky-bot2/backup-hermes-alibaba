@@ -1,0 +1,28 @@
+{
+  "runId": "47df53aa-1242-4f02-808e-6c41f3168a26",
+  "sessionKey": "17998344-ecf1-412c-b557-b20378acbcdb",
+  "friendlyId": "17998344-ecf1-412c-b557-b20378acbcdb",
+  "status": "active",
+  "createdAt": 1781404823842,
+  "updatedAt": 1781404935194,
+  "lastEventAt": 1781404935194,
+  "assistantText": "\n\nLet me grab the official docs for Telegram setup.\n\n\n\nHere's how to set up Telegram to chat with Hermes.\n\n**What you need:**\n- A Telegram bot token (from BotFather)\n- An API key for your LLM provider (e.g. OpenRouter, Anthropic)\n\n**Step by step:**\n\n**1. Create a Telegram bot**\nOpen Telegram, search for @BotFather, and send `/newbot`. It'll ask for a name and username. When it's done, BotFather gives you an HTTP API token that looks like `123456789:ABCdefGHIjklmNOPqrStuVWXyz`. Copy it.\n\n**2. Add the token to Hermes**\n\nEither run the interactive setup:\n\n```\nhermes gateway setup\n```\n\n...which walks through all platforms with arrow keys, or add it to `~/.hermes/.env` manually:\n\n```\nTELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklmNOPqrStuVWXyz\n```\n\n**3. Security — allow your user ID**\nBy default Hermes denies everyone. You need either:\n\n- Set `TELEGRAM_ALLOWED_USERS` in `.env` with your Telegram numeric user ID (find it by messaging @userinfobot on Telegram):\n\n```\nTELEGRAM_ALLOW",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_b1fe0e47d38346e0bfa692af",
+      "name": "skill_view",
+      "phase": "complete",
+      "preview": "skill_view"
+    },
+    {
+      "id": "call_67c7fc0311a242c5b33e2ccf",
+      "name": "web_extract",
+      "phase": "complete",
+      "preview": "web_extract"
+    }
+  ],
+  "lifecycleEvents": []
+}
+[]
+}

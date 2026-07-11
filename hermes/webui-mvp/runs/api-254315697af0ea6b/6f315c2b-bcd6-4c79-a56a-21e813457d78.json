@@ -1,0 +1,15 @@
+{
+  "runId": "6f315c2b-bcd6-4c79-a56a-21e813457d78",
+  "sessionKey": "api-254315697af0ea6b",
+  "friendlyId": "api-254315697af0ea6b",
+  "status": "active",
+  "createdAt": 1781339034531,
+  "updatedAt": 1781339043545,
+  "lastEventAt": 1781339043545,
+  "assistantText": "The branch exists but has zero commits — I need to see what's in the workspace to know what needs fixing and pushing. Let",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+ecycleEvents": []
+}

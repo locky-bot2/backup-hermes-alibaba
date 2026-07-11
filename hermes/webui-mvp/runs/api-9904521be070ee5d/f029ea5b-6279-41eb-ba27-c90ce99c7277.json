@@ -1,0 +1,28 @@
+{
+  "runId": "f029ea5b-6279-41eb-ba27-c90ce99c7277",
+  "sessionKey": "api-9904521be070ee5d",
+  "friendlyId": "api-9904521be070ee5d",
+  "status": "active",
+  "createdAt": 1781323156692,
+  "updatedAt": 1781323174610,
+  "lastEventAt": 1781323174610,
+  "assistantText": "Let me check what I've got and try running it.\n\n\n\nThe `execute_code` tool is stuck waiting for approval on its first run. Let",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_a954884a76464b5d82af80e0",
+      "name": "skills_list",
+      "phase": "complete",
+      "preview": "skills_list"
+    },
+    {
+      "id": "call_029a8241cef54673a904ad1d",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    }
+  ],
+  "lifecycleEvents": []
+}
+: []
+}

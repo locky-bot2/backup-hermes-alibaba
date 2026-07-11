@@ -1,0 +1,40 @@
+{
+  "runId": "1b0d50aa-1e0e-4879-a0b0-2366fd5ea67b",
+  "sessionKey": "api-5c056ff8d8dce897",
+  "friendlyId": "api-5c056ff8d8dce897",
+  "status": "active",
+  "createdAt": 1781339400033,
+  "updatedAt": 1781339415383,
+  "lastEventAt": 1781339415383,
+  "assistantText": "Let me check the push script that's already on disk\n\nJust run",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_e73e165b22b34e4fb6164463",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_e2217f0b9ec24517a2e700b4",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_B3GIR88HUcLapeXg7KsA0938",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/weather-app/push-to-github.sh"
+    },
+    {
+      "id": "call_01_tGHuSE9tjJ8xfC53SfJP7051",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+[]
+}

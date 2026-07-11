@@ -1,0 +1,15 @@
+{
+  "runId": "8c5caa5d-a6be-4c74-8610-a2713cc57a95",
+  "sessionKey": "api-6c9496c9ca0e03f1",
+  "friendlyId": "api-6c9496c9ca0e03f1",
+  "status": "active",
+  "createdAt": 1781324564150,
+  "updatedAt": 1781324569860,
+  "lastEventAt": 1781324569860,
+  "assistantText": "The approval prompt should appear in your chat interface — it's the one asking",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+]
+}

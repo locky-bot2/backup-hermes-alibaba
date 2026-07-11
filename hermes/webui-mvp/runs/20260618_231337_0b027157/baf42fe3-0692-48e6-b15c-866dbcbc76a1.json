@@ -1,0 +1,13 @@
+{
+  "runId": "baf42fe3-0692-48e6-b15c-866dbcbc76a1",
+  "sessionKey": "20260618_231337_0b027157",
+  "friendlyId": "20260618_231337_0b027157",
+  "status": "complete",
+  "createdAt": 1781825397326,
+  "updatedAt": 1781825411906,
+  "lastEventAt": 1781825411906,
+  "assistantText": "Hi! How's your morning in Hsinchu? Anything I can help you with?",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}

@@ -1,0 +1,15 @@
+{
+  "runId": "603fc1fd-d09a-415d-b253-eb02762103a4",
+  "sessionKey": "api-a8b09dfc87cb959d",
+  "friendlyId": "api-a8b09dfc87cb959d",
+  "status": "active",
+  "createdAt": 1781327738289,
+  "updatedAt": 1781327745047,
+  "lastEventAt": 1781327745047,
+  "assistantText": "That's right — my skills live at `/opt/data/skills/`. The workspace context says `/workspace` but that",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+leEvents": []
+}

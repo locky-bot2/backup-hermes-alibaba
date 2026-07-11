@@ -1,0 +1,15 @@
+{
+  "runId": "eba95d0f-eece-4533-8b8b-93a6cc7dc217",
+  "sessionKey": "api-def94e43c1f49fa4",
+  "friendlyId": "api-def94e43c1f49fa4",
+  "status": "active",
+  "createdAt": 1781317738070,
+  "updatedAt": 1781317745816,
+  "lastEventAt": 1781317745816,
+  "assistantText": "Got it. I'm Ash — software architect, systems thinker, delegator. Pikachu's the builder.\n\nA few things to flag right off the bat:\n\n**Vision is broken.** Your Hermes setup has no LLM provider configured for vision tasks. I can't see images right now. If you want that working, run",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+": []
+}

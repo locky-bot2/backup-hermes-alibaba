@@ -1,0 +1,94 @@
+{
+  "jobs": [
+    {
+      "id": "1afd0de01c40",
+      "name": "arXiv LLM Fine-Tuning Papers Weekly",
+      "prompt": "Search arXiv for the top 5 most recent LLM fine-tuning papers. Use the arxiv skill to query by keyword: search for recent papers on \"LLM fine-tuning\" OR \"large language model fine-tuning\". Get results sorted by submission date (newest first). \n\nSelect the top 5 most relevant ones to fine-tuning techniques (LoRA, QLoRA, PEFT, instruction tuning, RLHF, supervised fine-tuning, etc.), filter out unrelated papers.\n\nThen deliver the result with this format for each paper:\n- **Title**\n  Published: YYYY-MM-DD\n  Abstract: one-sentence summary of what the paper is about\n  arXiv: https://arxiv.org/abs/XXXX.XXXXX\n\nStart with a header: \"Top 5 LLM Fine-Tuning Papers on arXiv This Week\"\n\nSend to user at chat ID 1508030749 via telegram.",
+      "skills": [
+        "research/arxiv"
+      ],
+      "skill": "research/arxiv",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "arxiv-fine-tuning-weekly.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * 6",
+        "display": "0 0 * * 6"
+      },
+      "schedule_display": "0 0 * * 6",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-14T07:59:36.066892+00:00",
+      "next_run_at": "2026-07-18T00:00:00+08:00",
+      "last_run_at": "2026-07-11T16:10:52.773280+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram:1508030749",
+      "origin": {
+        "platform": "api_server",
+        "chat_id": "api-06e6ed46e43f8ab3",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "8155942596b5",
+      "name": "Hermes VPS Weekly Backup",
+      "prompt": "Weekly backup of Hermes VPS to GitHub. Runs the backup script which git adds, commits, and pushes to origin/main.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "hermes-backup.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * 0",
+        "display": "0 0 * * 0"
+      },
+      "schedule_display": "0 0 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-14T08:07:26.778993+00:00",
+      "next_run_at": "2026-07-12T00:00:00+00:00",
+      "last_run_at": "2026-07-05T00:00:33.885727+00:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 128\nstderr:\nfatal: could not read Username for 'https://github.com': No such device or address\nstdout:\n[main 6b94968] Auto-backup: 2026-07-05_00-00 UTC\n 20 files changed, 1721 insertions(+), 678 deletions(-)\n create mode 100644 .skills_prompt_snapshot.json\n create mode 100644 cron/output/1afd0de01c40/2026-07-04_00-03-38.md\n create mode 100644 cron/output/8155942596b5/2026-06-28_00-00-09.md\n create mode 100644 skills/.curator_backups/2026-07-04T01-56-29Z/cron-jobs.json\n create mode 100644 skills/.curator_backups/2026-07-04T01-56-29Z/manifest.json\n create mode 100644 skills/.curator_backups/2026-07-04T01-56-29Z/skills.tar.gz\n create mode 100644 skills/autonomous-ai-agents/hermes-agent/references/gateway-diagnostics.md\n create mode 100644 skills/autonomous-ai-agents/hermes-agent/references/skill-authoring-in-repo.md\n create mode 100644 skills/autonomous-ai-agents/hermes-agent/references/subagent-delegation.md\n rename skills/autonomous-ai-agents/{hermes-gateway-diagnostics => hermes-agent}/references/telegram-model-failure-example.md (100%)\n rename skills/autonomous-ai-agents/{subagent-delegation => hermes-agent}/references/weather-app-deploy-session.md (100%)\n delete mode 100644 skills/autonomous-ai-agents/hermes-gateway-diagnostics/SKILL.md\n delete mode 100644 skills/autonomous-ai-agents/subagent-delegation/SKILL.md\n delete mode 100644 skills/software-development/hermes-agent-skill-authoring/SKILL.md",
+      "last_delivery_error": null,
+      "deliver": "telegram:1508030749",
+      "origin": {
+        "platform": "api_server",
+        "chat_id": "api-06e6ed46e43f8ab3",
+        "chat_name": null,
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-07-11T16:10:52.773734+08:00"
+}

@@ -1,0 +1,28 @@
+{
+  "runId": "f328a086-5254-4b62-9e85-a4d90e5c3416",
+  "sessionKey": "8f5850e8-df23-40bb-ae99-649da26c74f4",
+  "friendlyId": "8f5850e8-df23-40bb-ae99-649da26c74f4",
+  "status": "active",
+  "createdAt": 1781312737317,
+  "updatedAt": 1781312742391,
+  "lastEventAt": 1781312742391,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_Yb53llcI1VejVhkPj9l28090",
+      "name": "skill_view",
+      "phase": "calling",
+      "preview": "📚 hermes-agent"
+    },
+    {
+      "id": "call_02_IkeA2RrcXX0MDSyVyZKz7541",
+      "name": "skill_view",
+      "phase": "calling",
+      "preview": "📚 kanban-worker"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ []
+}

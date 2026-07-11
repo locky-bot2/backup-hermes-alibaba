@@ -1,0 +1,17 @@
+{
+  "runId": "f060c26e-bfae-4f27-8dcb-613490f97d11",
+  "sessionKey": "api-8c3f2e73c55b3c01",
+  "friendlyId": "api-8c3f2e73c55b3c01",
+  "status": "active",
+  "createdAt": 1781340467325,
+  "updatedAt": 1781340471497,
+  "lastEventAt": 1781340471497,
+  "assistantText": "You're right, sorry. Let me just run things directly through the terminal instead.\n\nFirst",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+: []
+}
+]
+}

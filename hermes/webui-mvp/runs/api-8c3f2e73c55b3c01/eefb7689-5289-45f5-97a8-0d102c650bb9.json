@@ -1,0 +1,13 @@
+{
+  "runId": "eefb7689-5289-45f5-97a8-0d102c650bb9",
+  "sessionKey": "api-8c3f2e73c55b3c01",
+  "friendlyId": "api-8c3f2e73c55b3c01",
+  "status": "complete",
+  "createdAt": 1781339986340,
+  "updatedAt": 1781339989117,
+  "lastEventAt": 1781339989117,
+  "assistantText": "Hi! How can I help you",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}

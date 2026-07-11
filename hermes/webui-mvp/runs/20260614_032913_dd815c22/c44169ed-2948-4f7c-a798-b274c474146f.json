@@ -1,0 +1,15 @@
+{
+  "runId": "c44169ed-2948-4f7c-a798-b274c474146f",
+  "sessionKey": "20260614_032913_dd815c22",
+  "friendlyId": "20260614_032913_dd815c22",
+  "status": "active",
+  "createdAt": 1781422521480,
+  "updatedAt": 1781422531419,
+  "lastEventAt": 1781422531419,
+  "assistantText": "Glad you like the format! Before I set up the cron job, I need one thing from you:\n\n**What's your Telegram chat ID or username?** I need this",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+
+}

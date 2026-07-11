@@ -1,0 +1,13 @@
+{
+  "runId": "686560df-aba9-46a0-bbeb-02397344cb23",
+  "sessionKey": "103ced9d-b095-44e6-8a54-f0489a49d27c",
+  "friendlyId": "103ced9d-b095-44e6-8a54-f0489a49d27c",
+  "status": "complete",
+  "createdAt": 1781309261140,
+  "updatedAt": 1781309265886,
+  "lastEventAt": 1781309265886,
+  "assistantText": "Based on the conversation metadata, I'm currently running on:\n\nModel: anthropic/claude-opus-4.6\nProvider: openrouter\n\nSo the model switch from the previous request hasn't taken effect yet for this session. The change would apply on the next session or after a /reset.",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}

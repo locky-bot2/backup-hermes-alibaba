@@ -1,0 +1,13 @@
+{
+  "runId": "7dfb2fab-c412-4d7b-804a-5f4ef4510212",
+  "sessionKey": "0f26885b-27fe-41e1-92b2-077c39d35581",
+  "friendlyId": "0f26885b-27fe-41e1-92b2-077c39d35581",
+  "status": "complete",
+  "createdAt": 1781309486168,
+  "updatedAt": 1781309489621,
+  "lastEventAt": 1781309489621,
+  "assistantText": "I'm using **anthropic/claude-opus-4.6**, routed through OpenRouter.",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}

@@ -1,0 +1,22 @@
+{
+  "runId": "5e7c2cc8-83ad-408d-b8ee-aa950ecdd6c0",
+  "sessionKey": "api-ba88869e85627fce",
+  "friendlyId": "api-ba88869e85627fce",
+  "status": "active",
+  "createdAt": 1781335254431,
+  "updatedAt": 1781335262493,
+  "lastEventAt": 1781335262493,
+  "assistantText": "Good question. Let me look at the config directly.\n\n\n\nRight there on **line 2**: `provider: \"\"` — it's an empty string.\n\nFor an agent profile to run independently, Hermes needs both a **model** and a **provider** so it knows which API to call. Squirtle has a model (`deepseek/deepseek",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "019ebfdaf340f04731c085dc6eebaf8b",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+eEvents": []
+}

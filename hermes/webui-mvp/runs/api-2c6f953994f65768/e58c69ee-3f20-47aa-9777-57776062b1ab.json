@@ -1,0 +1,22 @@
+{
+  "runId": "e58c69ee-3f20-47aa-9777-57776062b1ab",
+  "sessionKey": "api-2c6f953994f65768",
+  "friendlyId": "api-2c6f953994f65768",
+  "status": "active",
+  "createdAt": 1781338833784,
+  "updatedAt": 1781338854512,
+  "lastEventAt": 1781338854512,
+  "assistantText": "No `gh` available. Let me check the current git setup in the weather-app and push using the token.\n\n\n\nApproval mode is blocking automation again. Please run these commands in your terminal:\n\n```bash\ncd /opt/data/weather-app\ngit remote -v\ngit branch\ngit status --short\n```\n\nI need to see",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_3953178302f84dffb5b4ff7f",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ents": []
+}

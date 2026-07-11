@@ -1,0 +1,112 @@
+{
+  "runId": "1ecbba11-4a34-4b32-8391-2aa0c56a691e",
+  "sessionKey": "api-d39b4c3937e2c034",
+  "friendlyId": "api-d39b4c3937e2c034",
+  "status": "active",
+  "createdAt": 1781334814248,
+  "updatedAt": 1781334872353,
+  "lastEventAt": 1781334872353,
+  "assistantText": "\n\nGot it — Squirtle is the DevOps agent. Let me check what Squirtle has available and set up GitHub access.\n\nLet me check what's available differently.\n\n",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_9fMAWmK6YUofYp8OHew19879",
+      "name": "session_search",
+      "phase": "complete",
+      "preview": "session_search"
+    },
+    {
+      "id": "call_02_pMLNwRt0pTyg3rRGmQuC8596",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_WgwEl92qRXYBR00uzpxK8908",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_01_jrnmcKomK6j1cMFaJEBk9669",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_02_1AWq9sjydn0c3KXCg3pL3194",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_m9jTx08TDe1rHf6NA0lF4811",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 search_files"
+    },
+    {
+      "id": "call_01_pEkVf40z5jtlFrlzzGB08053",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_Mex6yG9ORvKbM1c0bQuA9539",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_01_dJYRVq6prBpGuVD3phTz5522",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_d4a975c7f42d43d697c658e3",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_0d01696989cc40a38e59adaf",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 package.json"
+    },
+    {
+      "id": "call_58abd5ad1bf941738d042aa9",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "019ebfd4f38c54b501a527ddb4088510",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "019ebfd4eeee3610f21890fd8d33ea76",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_681d3594e3bf47e1b1abb541",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 search_files"
+    },
+    {
+      "id": "call_59550489f8a34bc9857fc398",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ "lifecycleEvents": []
+}

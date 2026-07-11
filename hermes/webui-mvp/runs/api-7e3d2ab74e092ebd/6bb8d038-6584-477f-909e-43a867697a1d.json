@@ -1,0 +1,28 @@
+{
+  "runId": "6bb8d038-6584-477f-909e-43a867697a1d",
+  "sessionKey": "api-7e3d2ab74e092ebd",
+  "friendlyId": "api-7e3d2ab74e092ebd",
+  "status": "active",
+  "createdAt": 1781335273379,
+  "updatedAt": 1781335287509,
+  "lastEventAt": 1781335287509,
+  "assistantText": "\n\nDone. Squirtle now has `provider: openrouter` — same provider as the rest of the team. It",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "019ebfdb44ae0a28ae24e7583040bc14",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_00_4cHDNTKcIBuLXBS5WkKO1307",
+      "name": "patch",
+      "phase": "complete",
+      "preview": "patch"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ []
+}

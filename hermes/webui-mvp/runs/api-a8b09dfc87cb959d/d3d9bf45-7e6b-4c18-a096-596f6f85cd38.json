@@ -1,0 +1,15 @@
+{
+  "runId": "d3d9bf45-7e6b-4c18-a096-596f6f85cd38",
+  "sessionKey": "api-a8b09dfc87cb959d",
+  "friendlyId": "api-a8b09dfc87cb959d",
+  "status": "active",
+  "createdAt": 1781326268203,
+  "updatedAt": 1781326279885,
+  "lastEventAt": 1781326279885,
+  "assistantText": "Good question — approvals come through the API server UI. If you're chatting through a web interface or terminal, there should be an Approve/Reject button on the",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+leEvents": []
+}

@@ -1,0 +1,40 @@
+{
+  "runId": "e80fa902-307d-4ce2-b131-1f01ac7e639f",
+  "sessionKey": "api-a8b09dfc87cb959d",
+  "friendlyId": "api-a8b09dfc87cb959d",
+  "status": "active",
+  "createdAt": 1781327238638,
+  "updatedAt": 1781327250733,
+  "lastEventAt": 1781327250733,
+  "assistantText": "",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_6cf14d559a8448f2a5132c6c",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_8ce2b4362e8940a5be417040",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_jcGJ3wbYojhsjaSjsjhw4180",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 *"
+    },
+    {
+      "id": "call_01_BYSPcsDoWeu5zYpf6iUq2861",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ []
+}

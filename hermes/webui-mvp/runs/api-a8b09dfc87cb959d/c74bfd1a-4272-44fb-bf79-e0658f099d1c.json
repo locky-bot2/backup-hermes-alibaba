@@ -1,0 +1,34 @@
+{
+  "runId": "c74bfd1a-4272-44fb-bf79-e0658f099d1c",
+  "sessionKey": "api-a8b09dfc87cb959d",
+  "friendlyId": "api-a8b09dfc87cb959d",
+  "status": "active",
+  "createdAt": 1781327780189,
+  "updatedAt": 1781327812731,
+  "lastEventAt": 1781327812731,
+  "assistantText": "\n\nIt's gone — `frontend-design` no longer exists anywhere on the system. It's been fully removed",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_5e32df1a4bf94308be699e1a",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_7139593fecef4ede9135dc0b",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_a31de4dabdb7451291c5fc88",
+      "name": "skills_list",
+      "phase": "complete",
+      "preview": "skills_list"
+    }
+  ],
+  "lifecycleEvents": []
+}
+[]
+}

@@ -1,0 +1,15 @@
+{
+  "runId": "19ec691f-be30-46f5-b1d0-f05207126942",
+  "sessionKey": "api-2c412670030679c1",
+  "friendlyId": "api-2c412670030679c1",
+  "status": "active",
+  "createdAt": 1781336024675,
+  "updatedAt": 1781336031421,
+  "lastEventAt": 1781336031421,
+  "assistantText": "Let me check",
+  "thinkingText": "",
+  "toolCalls": [],
+  "lifecycleEvents": []
+}
+ents": []
+}

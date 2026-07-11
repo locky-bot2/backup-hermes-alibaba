@@ -1,0 +1,34 @@
+{
+  "runId": "9fa9385e-0418-410d-a265-34b8e50e69f0",
+  "sessionKey": "17998344-ecf1-412c-b557-b20378acbcdb",
+  "friendlyId": "17998344-ecf1-412c-b557-b20378acbcdb",
+  "status": "active",
+  "createdAt": 1781407502032,
+  "updatedAt": 1781407528918,
+  "lastEventAt": 1781407528918,
+  "assistantText": "Let me check what's actually in your `.env` and whether the gateway is running.\n\nGood news — the gateway IS running and your `.env` has the right values. `TELEGRAM_ALLOWED_USERS` is set to `150803",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_DQpex3NQpvz0WvNYYn141105",
+      "name": "read_file",
+      "phase": "calling",
+      "preview": "📖 /opt/data/.env"
+    },
+    {
+      "id": "call_01_WOin25IzMKHXmLedFhIv4060",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    },
+    {
+      "id": "call_400940374f9c444dae981dae",
+      "name": "execute_code",
+      "phase": "complete",
+      "preview": "execute_code"
+    }
+  ],
+  "lifecycleEvents": []
+}
+]
+}

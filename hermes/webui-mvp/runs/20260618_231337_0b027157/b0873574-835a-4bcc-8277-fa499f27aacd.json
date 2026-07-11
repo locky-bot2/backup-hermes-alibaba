@@ -1,0 +1,57 @@
+{
+  "runId": "b0873574-835a-4bcc-8277-fa499f27aacd",
+  "sessionKey": "20260618_231337_0b027157",
+  "friendlyId": "20260618_231337_0b027157",
+  "status": "active",
+  "createdAt": 1781825430727,
+  "updatedAt": 1781825510442,
+  "lastEventAt": 1781825510442,
+  "assistantText": "\n\nLet me check the gateway status to see what's going on with Telegram.\n\nNo terminal in this session — let me check the config and logs directly.",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_00_4Yfx4MZo47hILaylb1e29254",
+      "name": "skill_view",
+      "phase": "complete",
+      "preview": "skill_view"
+    },
+    {
+      "id": "call_00_sEFxYITUmBn8eNLo1qcK8607",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    },
+    {
+      "id": "call_01_6RLzig33BNdwW5nlKJiN4497",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_00_XCnjuN3Yp6C9PLoPsqT35594",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_a983654d5c7e4879a6dd2f48",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    },
+    {
+      "id": "call_5a1eefe074a94f2c8c18a12f",
+      "name": "search_files",
+      "phase": "calling",
+      "preview": "🔎 config*"
+    },
+    {
+      "id": "call_fb6e9fd475244cd9adf453c1",
+      "name": "search_files",
+      "phase": "complete",
+      "preview": "search_files"
+    }
+  ],
+  "lifecycleEvents": []
+}
+}

@@ -1,0 +1,28 @@
+{
+  "runId": "6fa59c5a-408f-4fca-bb7c-23917188ec45",
+  "sessionKey": "api-8c04b036d8b57230",
+  "friendlyId": "api-8c04b036d8b57230",
+  "status": "active",
+  "createdAt": 1781335596236,
+  "updatedAt": 1781335612646,
+  "lastEventAt": 1781335612646,
+  "assistantText": "\n\nLet me check the git state in",
+  "thinkingText": "",
+  "toolCalls": [
+    {
+      "id": "call_f60f4bc398b049b397ef5eec",
+      "name": "skill_view",
+      "phase": "complete",
+      "preview": "skill_view"
+    },
+    {
+      "id": "call_1c20f52299a74414a2af7943",
+      "name": "read_file",
+      "phase": "complete",
+      "preview": "read_file"
+    }
+  ],
+  "lifecycleEvents": []
+}
+ecycleEvents": []
+}
