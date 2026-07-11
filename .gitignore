@@ -1,0 +1,16 @@
+node_modules/
+venv/
+.venv/
+hermes/hermes-agent/
+hermes/audio_cache/
+hermes/image_cache/
+hermes/cache/
+hermes/logs/
+hermes/sandboxes/
+hermes/hooks/
+hermes/pairing/
+hermes/.env
+hermes/auth.json
+hermes/auth.lock
+*.db-shm
+*.db-wal
