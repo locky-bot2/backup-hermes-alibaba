@@ -14,3 +14,8 @@ hermes/auth.json
 hermes/auth.lock
 *.db-shm
 *.db-wal
+
+# Weather project files
+hermes/scripts/weather*
+hermes/profiles/*/specs/weather*
+hermes/skills/*/references/weather*
