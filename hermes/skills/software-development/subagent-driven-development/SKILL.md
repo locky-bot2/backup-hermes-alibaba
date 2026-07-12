@@ -216,6 +216,23 @@ git add -A && git commit -m "feat: complete [feature name] implementation"
 - **Start code quality review before spec compliance is PASS** (wrong order)
 - Move to next task while either review has open issues
 
+### ⏱️ Subagent Timeout Pitfall
+
+Subagents have a **configurable timeout** (default 30s) for multi-file or complex tasks. When a subagent times out:
+
+1. **Progress is lost** — the subagent's work (file writes, git commits) may be partially completed or rolled back. Do NOT assume anything was saved.
+2. **Do NOT re-delegate blindly** — the same timeout will fire again on a task of the same complexity.
+3. **Strategy A — Reduce task granularity:** Split the task into smaller chunks (e.g. "create file A" → "create file B" → "update tests" instead of one monolithic task).
+4. **Strategy B — Execute directly:** If the task is straightforward (single file edit, known pattern), do it yourself in the parent session with `patch`, `write_file`, or `terminal`. Subagent overhead isn't justified for ~2-minute tasks.
+5. **Strategy C — Increase timeout:** If the subagent config allows a longer timeout (e.g. `child_timeout_seconds` in Hermes config), raise it. Only do this if the task genuinely needs more time (e.g. multiple API calls, npm install, git operations).
+
+**When to do which:**
+- Short mechanical edits (1-2 files) → execute directly
+- Complex multi-step tasks (3+ files, tests, git) → split into smaller tasks, each <30s of work
+- Truly heavy work (install deps, run full test suite, deploy) → use background processes or cron, not subagents
+
+**Detection:** If a subagent repeatedly times out on similar-sized tasks, the bottleneck is the timeout setting, not the task. Don't keep retrying — change strategy.
+
 ## Handling Issues
 
 ### If Subagent Asks Questions

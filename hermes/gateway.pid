@@ -1,1 +1,1 @@
-{"pid": 2815, "kind": "hermes-gateway", "argv": ["/home/admin/.hermes/hermes-agent/hermes_cli/main.py", "gateway", "run", "--replace"], "start_time": 169818}
+{"pid": 1016, "kind": "hermes-gateway", "argv": ["/home/admin/.hermes/hermes-agent/hermes_cli/main.py", "gateway", "run", "--replace"], "start_time": 718}

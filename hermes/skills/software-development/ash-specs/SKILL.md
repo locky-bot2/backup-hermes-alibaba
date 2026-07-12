@@ -92,7 +92,7 @@ delegate_task(
 
 ## Team Profile Setup
 
-Profiles live under `/opt/data/profiles/<name>/config.yaml` (NOT `~/.hermes/profiles/`). Each must have a non-empty `provider` field or the profile will fail silently when spawned. Default: `provider: openrouter`.
+Profiles live under `~/.hermes/profiles/<name>/config.yaml`. Each must have a non-empty `provider` field or the profile will fail silently when spawned. Default: `provider: openrouter`. Skills go under `~/.hermes/profiles/<name>/skills/<category>/<skill-name>/SKILL.md`.
 
 ```yaml
 model: deepseek/deepseek-v4-flash
@@ -101,7 +101,7 @@ system_prompt: >- ...  # role definition
 description: "Pikachu — Ash's Builder"
 ```
 
-Skills for each team member go under `/opt/data/profiles/<name>/skills/<category>/<skill-name>/SKILL.md`.
+Skills for each team member go under `~/.hermes/profiles/<name>/skills/<category>/<skill-name>/SKILL.md`.
 
 ## Pipeline Continuation
 
@@ -144,6 +144,8 @@ cd /project-dir && npm install && npm test
 
 For a concrete smoke-test checklist and serving commands, see `references/weather-app-testing.md`.
 
+For a reusable architecture template (Node.js + Express + free API + vanilla frontend), see `references/node-express-weather-pattern.md`.
+
 ### Verifying Charmander's Test Output
 
 After Charmander writes integration tests, run the test suite and check for known-fragile patterns that are common in Vitest/happy-dom environments. These cause false-negative test failures that Charmander's sandbox may not surface:
@@ -155,6 +157,37 @@ After Charmander writes integration tests, run the test suite and check for know
 
 For the full pattern catalog with code examples, see `references/server-integration-testing.md`. Run the test suite AFTER fixing these — do not trust Charmander's self-report that "all tests passed" without running them yourself.
 
+## Team Skills Management
+
+Audit and maintain agent skills to keep the team effective.
+
+### Skills Audit Workflow
+
+1. **Inventory** — List all installed skills across all agents
+2. **Map roles** — Check each agent's config.yaml to understand their role
+3. **Identify gaps** — Cross-reference role against skills. Common gaps per role:
+   - **QA (Charmander)**: e2e + integration + unit + API + performance + accessibility + bug reporting
+   - **Dev (Pikachu)**: feature impl + unit testing + code review + DB design + PR workflow + frontend design
+   - **DevOps (Squirtle)**: containerization + CI/CD + deploy/rollback + terraform + monitoring + backup/DR
+4. **Add missing** — Create SKILL.md with YAML frontmatter under the right category dir
+5. **Verify** — Confirm the file exists and is formatted correctly
+
+### Skills Hub (Remote Catalog)
+
+Hermes has 91+ hub skills from Nous Research. CLI only — no web GUI:
+
+```bash
+hermes skills browse          # Browse paginated
+hermes skills search <query>  # Search by keyword
+hermes skills inspect <name>  # Preview before installing
+hermes skills install <name>  # Install from hub
+hermes skills list            # List installed skills
+```
+
+### Consistency Rule
+
+All agents should use the same organizational structure. If one uses categories (`testing/`, `software-development/`, `devops/`), they all should. Mixed flat-and-category structures cause confusion when managing the team.
+
 ## Pitfalls
 
 - **Empty provider field.** All team profiles must have `provider: openrouter` (or another valid provider) or they fail silently when delegated. Check before spawning.
@@ -162,3 +195,5 @@ For the full pattern catalog with code examples, see `references/server-integrat
 - **Subagent self-reports.** A subagent reporting "tests passed" or "file written" may be wrong. Verify actual output, file existence, or endpoint responses.
 - **Synchronous delegation.** `delegate_task` runs synchronously inside the parent turn. If the parent is interrupted, the child is cancelled. Children cannot run in the background.
 - **No agent memory.** Child agents have no memory of past conversations. Pass all relevant context (file paths, project structure, error messages) explicitly in the `context` field.
+- **Subagent timeout on npm install / network ops.** Subagents have a 30s default timeout. Tasks involving `npm install`, pip install, or network-heavy API calls may hit this limit. The subagent returns `status: "timeout"` with partial output. **Fallback:** build directly in the parent session instead of delegating. The subagent's partial files are a useful starting point — verify what exists and finish from there. For long-running data-collection tasks, use the cron `no_agent` script pattern instead.
+- **Static file server for integration tests.** When writing integration tests for Express/Node apps, use `http.createServer` with `port: 0` (OS-allocated) inline in the test file — do NOT use `child_process.spawn`. The spawn approach can time out in sandboxed environments. See `references/server-integration-testing.md` and `references/node-express-weather-pattern.md` for patterns.

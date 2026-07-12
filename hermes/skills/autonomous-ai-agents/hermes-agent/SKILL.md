@@ -601,6 +601,67 @@ terminal(command="tmux new-session -d -s resumed 'hermes --continue'", timeout=1
 terminal(command="tmux new-session -d -s resumed 'hermes --resume 20260225_143052_a1b2c3'", timeout=10)
 ```
 
+### Profile Provider Config (Common Pitfall)
+
+Each profile `config.yaml` needs a non-empty `provider:` field. Empty provider (`provider: ""`) causes the profile to fail silently during delegation — no error, just a hung agent.
+
+After restoring or cloning profiles, always check:
+```bash
+for p in ~/.hermes/profiles/*/config.yaml; do
+  name=$(basename "$(dirname "$p")")
+  provider=$(grep -E '^provider:' "$p" | sed 's/^provider: *//' | tr -d '"'"'')
+  [ -z "$provider" ] && echo "⚠️  $name: EMPTY" || echo "✅ $name: $provider"
+done
+```
+
+**Model name format depends on provider type:**
+
+| Provider type | Example model | Correct for... |
+|--------------|---------------|----------------|
+| Aggregator (OpenRouter) | `provider/model-name` (e.g. `deepseek/deepseek-v4-flash`) | openrouter |
+| Direct API | `model-name` only (e.g. `deepseek-v4-flash`) | deepseek, anthropic, openai |
+
+Mixing these up (e.g. vendor-prefixed model with a direct provider) causes `No LLM provider configured` errors. `hermes doctor` catches this mismatch.
+
+### Testing Cron Jobs
+
+Cron jobs can be tested with `cronjob action='run'` without waiting for the schedule:
+
+```python
+# One-shot test (runs in background, check output after ~30-60s)
+# The agent log shows progress:
+#   grep -i "<job_id>" ~/.hermes/logs/agent.log | tail -5
+# Output file appears at:
+#   ls -lt ~/.hermes/cron/output/<job_id>/ | head -3
+```
+
+For script-based jobs (`no_agent: True`), run the script directly:
+```bash
+cd <workdir> && bash <script>
+```
+
+Always test after modifying a cron job's script, schedule, or delivery target.
+
+### Third-Party Web UIs
+
+**Hermes Workspace** (github.com/outsourc-e/hermes-workspace) — MIT-licensed visual mission control:
+chat, terminal, memory, skills, MCP manager, file browser, multi-agent ops, themes.
+
+> ⚠️ **RAM requirement:** Hermes Workspace needs ≥2GB free RAM for the Vite dev server (esbuild optimizer is memory-hungry). On VPS with <2GB total RAM (e.g., 1.8GB with gateway+dashboard+TUI consuming ~1GB), it will repeatedly crash with OOM (exit code 137) despite swap. In that case, **use `hermes skills browse` (CLI) for skill browsing** — it works fine on any VPS and shows the same information as the Workspace's visual skill browser.
+
+Attach to an existing Hermes Agent (see `references/hermes-workspace-setup.md`):
+```bash
+git clone https://github.com/outsourc-e/hermes-workspace.git
+cd hermes-workspace
+pnpm install
+# Set HERMES_API_URL, HERMES_DASHBOARD_URL in .env
+# Gateway needs API_SERVER_ENABLED=true in ~/.hermes/.env
+# Dashboard URL should point directly at :9120 (bypass nginx Host-header blocks on :9119)
+pnpm dev   # → http://localhost:3000
+```
+
+On low-RAM VPS (<2GB), esbuild OOM may kill pnpm dev — add 2GB swap first, then run with `NODE_OPTIONS=--max-old-space-size=1024` and `--force` flag. If page loads blank or JS errors appear (stale Vite cache), clear `node_modules/.vite/` and restart with `--force`. See `references/hermes-workspace-setup.md` for the full setup and troubleshooting.
+
 ### Tips
 
 - **Prefer `delegate_task` for quick subtasks** — less overhead than spawning a full process

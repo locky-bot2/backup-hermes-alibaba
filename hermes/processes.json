@@ -1,0 +1,20 @@
+[
+  {
+    "session_id": "proc_f1a6e13fe775",
+    "command": "cd /home/admin/weather-web-app && node server.js",
+    "pid": 7761,
+    "pid_scope": "host",
+    "cwd": "/home/admin/.hermes/hermes-agent",
+    "started_at": 1783775508.404769,
+    "task_id": "default",
+    "session_key": "20260711_180633_673689",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_interval": 0,
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]

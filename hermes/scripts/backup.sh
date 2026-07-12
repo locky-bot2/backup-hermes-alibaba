@@ -27,6 +27,11 @@ for item in "$HERMES_HOME"/*; do
         *.db-shm|*.db-wal)
             continue ;;
     esac
+    # Skip node_modules and large dirs
+    case "$name" in
+        lsp) continue ;;
+        node_modules) continue ;;
+    esac
     cp -r "$item" "$REPO_DIR/hermes/" 2>/dev/null || true
 done
 

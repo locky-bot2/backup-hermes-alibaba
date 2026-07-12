@@ -239,7 +239,140 @@ ls -lt ~/.hermes/cron/output/<job-id>/ | head -5
 
 Example: a backup script may reference `REPO_DIR="/opt/data"` but the actual clone lives at `/home/admin/hermes-backup`. Always verify paths after restore.
 
-### 14. Send Test Message from Each Platform
+### 14. Verify `hermes` Command Is on PATH
+
+After restoring files, confirm the `hermes` CLI is findable. The Hermes installer places the wrapper at `~/.local/bin/hermes`, but PATH inclusion may depend on shell type:
+
+```bash
+# Test in a fresh non-login shell (matches SSH → immediate command scenario)
+bash -c 'which hermes' 2>/dev/null
+```
+
+If not found, check which profile files add `~/.local/bin`:
+
+```bash
+grep -rn ".local/bin" ~/.profile ~/.bashrc ~/.bash_profile 2>/dev/null
+```
+
+- **`~/.profile`** — only sourced by login shells (fresh SSH). Not available in tmux panes, subshells, or `ssh host command` invocations.
+- **`~/.bashrc`** — sourced by every interactive non-login shell. **This is the reliable place.**
+
+If `.local/bin` is only in `~/.profile`, add it to `~/.bashrc` too:
+
+```bash
+cat >> ~/.bashrc << 'EOF'
+
+# Add local bin to PATH for hermes command
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+EOF
+```
+
+Then verify from any shell type:
+
+```bash
+bash -c 'source ~/.bashrc && hermes --version'
+```
+
+### 15. Set Up Ongoing Backup to GitHub
+
+After restoring, set up recurring backups so the next restore has fresher data. This creates a **new** backup repository (not the one you restored from).
+
+**Prerequisites:** GitHub Personal Access Token with `repo` scope. The token may be:
+- In `~/.bashrc` as `export GITHUB_TOKEN=...`
+- In `~/.git-credentials` as `https://user:TOKEN@github.com`
+- Provided manually
+
+**Steps:**
+
+```bash
+# 1. Create the repo via GitHub API
+curl -s -X POST https://api.github.com/user/repos \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  -H "Accept: application/vnd.github+json" \
+  -d '{
+    "name": "backup-hermes-<hostname>",
+    "description": "Auto-backup of Hermes Agent on <hostname>",
+    "private": false,
+    "auto_init": true
+  }'
+
+# 2. Clone it locally
+git clone https://$GITHUB_TOKEN@github.com/<user>/backup-hermes-<hostname>.git \
+  /home/admin/backup-hermes-<hostname>
+
+# 3. Write a backup script (no_agent mode)
+cat > /home/admin/backup-hermes-<hostname>/backup.sh << 'SCRIPT'
+#!/bin/bash
+set -e
+REPO_DIR="/home/admin/backup-hermes-<hostname>"
+HERMES_HOME="$HOME/.hermes"
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M UTC")
+echo "[$TIMESTAMP] Starting Hermes backup..."
+
+rm -rf "$REPO_DIR/hermes"
+mkdir -p "$REPO_DIR/hermes"
+
+cp "$HERMES_HOME/config.yaml" "$REPO_DIR/config.yaml" 2>/dev/null || true
+cp "$HERMES_HOME/SOUL.md" "$REPO_DIR/SOUL.md" 2>/dev/null || true
+
+for item in "$HERMES_HOME"/*; do
+    name=$(basename "$item")
+    case "$name" in
+        .env|auth.json|auth.lock|.hermes|audio_cache|image_cache|cache|logs|sandboxes|hooks|pairing|node_modules|venv|.venv|hermes-agent|lsp)
+            continue ;;
+        *.db-shm|*.db-wal) continue ;;
+    esac
+    cp -r "$item" "$REPO_DIR/hermes/" 2>/dev/null || true
+done
+
+source "$HOME/.bashrc" 2>/dev/null || true
+cd "$REPO_DIR"
+git add -A
+
+if git diff --cached --quiet; then
+  echo "[$TIMESTAMP] No changes to back up. Skipping commit."
+  exit 0
+fi
+
+CURRENT_TIME=$(date +"%Y-%m-%d_%H-%M-%S")
+git -c user.email="ash@hermes.local" -c user.name="Ash (Auto-Backup)" \
+  commit -m "Auto-backup: $CURRENT_TIME UTC"
+git push origin main
+echo "[$TIMESTAMP] Backup complete - $(git rev-parse --short HEAD)"
+SCRIPT
+chmod +x /home/admin/backup-hermes-<hostname>/backup.sh
+
+# 4. Copy to ~/.hermes/scripts/ for cron access
+cp /home/admin/backup-hermes-<hostname>/backup.sh ~/.hermes/scripts/backup.sh
+
+# 5. Create git-credentials file so the cron script can push
+echo "https://<user>:$GITHUB_TOKEN@github.com" > ~/.git-credentials
+chmod 600 ~/.git-credentials
+
+# 6. Push initial backup
+cd /home/admin/backup-hermes-<hostname>
+./backup.sh
+
+# 7. Create a cron job for weekly backup
+# Use the cronjob tool with:
+#   action='create'
+#   schedule='0 0 * * 0'  (weekly Sunday midnight)
+#   script='backup.sh'
+#   no_agent=True
+#   workdir='/home/admin/backup-hermes-<hostname>'
+#   deliver='telegram:<chat_id>'
+```
+
+**Important:** The backup script excludes secrets (`.env`, `auth.json`) and large caches. To restore from this backup later:
+1. Clone the repo
+2. Copy `config.yaml` to `~/.hermes/`
+3. Copy `hermes/` contents to `~/.hermes/`
+4. Manually re-set `.env` credentials
+5. Follow all post-restore steps in this skill
+
+### 16. Send Test Message from Each Platform
 
 After reconnecting each messaging platform, send a test message to confirm the full round-trip works (message → LLM → response):
 

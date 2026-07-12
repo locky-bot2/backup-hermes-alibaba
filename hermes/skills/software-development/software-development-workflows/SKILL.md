@@ -264,6 +264,60 @@ Always check console after navigation and after every significant interaction. S
 
 ---
 
+## 10. Vite CJS→ESM Dependency Interop
+
+When Vite serves a CommonJS (CJS) package as ESM and the browser reports:
+```
+SyntaxError: The requested module '...' does not provide an export named 'X'
+```
+
+the cause is almost always that Vite's CJS→ESM converter produced a broken wrapper for a deep dependency that wasn't pre-bundled.
+
+### Diagnosis
+
+1. Check if the package is in Vite's optimized deps: `ls node_modules/.vite/deps/`
+2. If missing and `optimizeDeps.noDiscovery: true`, Vite won't auto-discover it
+3. Check the package's `package.json` exports field — it may lack a `"main"` or have only CJS exports
+
+### Fix: ESM Wrapper Files (`.mjs`)
+
+The cleanest fix is to create proper ESM wrappers inside the package:
+
+**For React shim packages** (React 19+ has `useSyncExternalStore` built-in):
+```js
+// use-sync-external-store/shim/index.mjs
+export { useSyncExternalStore } from 'react';
+```
+
+**For packages needing actual implementation** (e.g. `useSyncExternalStoreWithSelector`):
+Create a clean ESM implementation in `.mjs` that imports from React and re-exports what's needed.
+
+**Then update `package.json` exports:**
+```json
+"./shim/with-selector": "./shim/with-selector.mjs",
+"./shim/with-selector.js": "./shim/with-selector.mjs",
+```
+
+### Alternative: `optimizeDeps.include`
+
+Add the package to the include list:
+```ts
+optimizeDeps: {
+  noDiscovery: true,
+  include: ['package-name'],  // bare name only — sub-path imports need careful handling
+}
+```
+
+**Caveat:** This fails if the package has no `"main"` field in package.json (only `"exports"`). Vite reports `Failed to resolve dependency: <name>, present in client 'optimizeDeps.include'`.
+
+### Prevention
+
+- For Vite projects using `noDiscovery: true`, audit deep CJS dependencies before upgrading React or similar frameworks
+- Packages that are pure CJS wrappers (`module.exports = require('./cjs/...')`) are the most fragile
+- The `.mjs` wrapper approach is more reliable than `optimizeDeps.include` for edge cases
+
+---
+
 ## 9. Spike / Feasibility Testing
 
 See `references/spike-methodology.md` for the full workflow.

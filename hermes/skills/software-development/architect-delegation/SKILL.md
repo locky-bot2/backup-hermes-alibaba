@@ -146,6 +146,7 @@ delegate_task(
 - **Skipping review** — the architect's review is the quality gate. Never merge unreviewed PRs.
 - **Parallel conflicts** — when delegating to multiple agents, ensure they don't touch overlapping files to avoid merge conflicts.
 - **Nested delegation** — for this user, max_spawn_depth=1; children cannot delegate further. Keep delegation flat.
+- **Subagent timeout on network-heavy setup** — `delegate_task` has a default 30s timeout. Subagents doing `npm install`, `pip install`, or slow API calls may hit this. The agent returns `status: "timeout"` with partial output. **Fallback:** build directly in the parent session instead; the subagent's partial files are a useful starting point. For long-running data collection tasks, use the cron `no_agent` script pattern which has separate timeout handling.
 
 ## Related Skills
 
